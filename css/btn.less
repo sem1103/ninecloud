@@ -1,0 +1,225 @@
+//main:style.less
+@import "variables";
+.nav__btn{
+    padding: 16px 32px;
+    border: 1px solid @orange;
+    outline: none;
+    cursor: pointer;
+    font: .7em "PT Sans";
+    color: #fff;
+    transition: background .2s linear;
+    &:hover{
+        background: @orange;
+        color: #fff;
+    }
+}
+#ba{
+    padding: 16px 32px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    font: .7em "PT Sans";
+    color: #fff;
+}
+.intro__btn{
+    display: table;
+    padding: 20px 65px;
+    background: @orange;
+    font: 700 .8em "PT Sans";
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: background .2s linear;
+    margin: 50px auto 20px auto;
+    &:hover{
+        background: transparent;
+        border: 1px solid @orange;
+    }
+}
+
+#radio{
+    position: fixed;
+    z-index: 1;
+    left:  -52px;
+    top: 85px;
+    transition: left .4s linear;
+    & span{
+        position: relative;
+        & i{
+            position: absolute;
+            top: 8px;
+            right: -80px;
+            font-size: 1.5em;
+            color: @orange;
+            opacity: .6;
+            cursor: pointer;
+            transition: opacity .3s linear;
+            &:hover{
+                opacity: 1;
+            }
+            &:focus{
+                opacity: 1;
+            }
+        }
+    }
+    & span:last-of-type i{
+        top: 32px;
+    }
+}
+#radio__on{
+    position: fixed;
+    z-index: 1;
+    left:  0px;
+    top: 85px;
+    transition: left .4s linear;
+    & span{
+        position: relative;
+        & i{
+            position: absolute;
+            top: 8px;
+            right: -80px;
+            font-size: 1.5em;
+            color: @orange;
+            opacity: .6;
+            cursor: pointer;
+            transition: opacity .3s linear;
+            &:hover{
+                opacity: 1;
+            }
+            &:focus{
+                opacity: 1;
+            }
+        }
+    }
+    & span:last-of-type i{
+        top: 32px;
+    }
+}
+#switch{
+    display: block;
+    transform: scale(1.1);
+    width: 40px;
+    height: 20px;
+    position: relative;
+    background-color: @lblack;
+    border: 0;
+    outline: 0;
+    
+    appearance: none;
+    border-radius: 10px;
+   
+    &::before{
+        content: "Light";
+        font: 1.1em 'Covered By Your Grace', cursive;
+        position: absolute;
+        background: linear-gradient(to bottom,@lblack,rgb(73, 73, 73));
+        width: 35px;
+        height: 20px; 
+        text-align: center;
+        left: 0;
+        top: 0;
+        transition: left .3s linear, text-shadow .3s linear;
+        border-radius: 10px;
+    }
+}
+
+
+#switch2{
+    transform: scale(1.1);
+    display: block;
+    width: 40px;
+    margin: 15px 0 0 0 ;
+    height: 20px;
+    position: relative;
+    border: 0;
+    outline: 0;
+    appearance: none;
+    border-radius: 10px;
+    &::before{
+        content: "Dark";
+        font: 1.1em 'Covered By Your Grace', cursive;
+        position: absolute;
+        background: linear-gradient(to bottom,@lblack,rgb(73, 73, 73));
+        width: 35px;
+        height: 20px; 
+        left: 0;
+        text-align: center;
+        top: 0;
+        transition: left .3s linear,  text-shadow .3s linear;
+        border-radius: 10px;
+    }
+}
+input[type="radio"]:checked{
+    background-color: @orange !important;
+    &::before{
+    left: 6px !important;
+    text-shadow: 0 0 5px @orange;
+}
+}
+
+.intro__link{
+    display: table;
+    margin: 0 auto;
+    font: .7em "PT Sans";
+    text-decoration: underline;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .2s linear;
+    &:hover{
+        color: @orange;
+    }
+}
+.searchurl__btn{
+    padding: 10px 26px;
+    background: @orange;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font: bold .8em "PT Sans";
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: background .2s linear;
+    &:hover{
+        background: transparent;
+        border: 1px solid @orange;
+    }
+}
+.rates__btn,.blog__btn{
+    display: inline-block;
+    padding: 15px 67px;
+    background: #2c3039;
+    font: bold .8em "PT Sans";
+    color: #fff;
+    text-transform: uppercase;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color .2s linear,border-color .2s linear;
+    border: 1px solid transparent;
+    &:hover{
+        background-color: transparent !important;
+        border-color: @orange;
+    }
+}
+.blog__btn{
+    display: table;
+    margin: 20px auto 0 auto;
+    &:hover{
+        color: @orange !important;
+        border-color: @orange;
+    }
+}
+#send{
+    background-color: @orange;
+    margin: 0 !important;
+    font: 700 .8em "PT Sans";
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+   &:hover{
+       color: @orange;
+       background-color: transparent;
+   } 
+   
+}
