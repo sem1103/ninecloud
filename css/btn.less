@@ -216,7 +216,9 @@ input[type="radio"]:checked{
     color: #fff;
     letter-spacing: 1px;
     cursor: pointer;
-    
+    transition: color .2s linear, background-color .2s linear;
+    border: 1px solid @orange;
+    padding: 0 22px;
    &:hover{
        color: @orange;
        background-color: transparent;
