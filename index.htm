@@ -82,7 +82,7 @@
                 .club, .guru, .email, .link, .today, and more!</h5>
                 <div>
                         <input class="searchurl__input" type="text" value="http:// ">
-                    <select class="searchurl__select" name="" id="">
+                    <select class="searchurl__select" name="url">
                         <option value="">.com</option>
                         <option value="">.ru</option>
                         <option value="">.org</option>
@@ -245,8 +245,8 @@
                 <img class="blog__img" src="img/blog1.png" alt="">
                 <h4>How does the Internet Create Potential </h4>
                 <div>
-                    <time datatime="06.01.2021">6 January, 2021</time>
-                 <span id="comments">6 comments</span>
+                    <span>6 January, 2021</span>        
+                    <span class="comments">6 comments</span>
                 <span><i class="far fa-heart"></i> 10 </span>
                 </div>
                 <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <button>Read More</button> 
@@ -257,8 +257,8 @@
                 <img class="blog__img" src="img/blog2.png" alt="">
                 <h4>How does the Internet Create Potential </h4>
                <div>
-                <time datatime="12.01.2021">12 January, 2021</time>
-                <span id="comments">8 comments</span>
+                <span>12 January, 2021</span>
+                <span class="comments">8 comments</span>
                <span><i class="far fa-heart"></i> 14</span>
                </div>
                 <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <button>Read More</button> 
@@ -269,8 +269,8 @@
                 <img class="blog__img" src="img/blog3.png" alt="">
                 <h4>How does the Internet Create Potential </h4>
                <div>
-                <time datatime="26.01.2021">26 January, 2021</time>
-                <span id="comments">7 comments</span>
+                <span>26 January, 2021</span>
+                <span class="comments">7 comments</span>
                <span><i class="far fa-heart"></i> 17 </span>
                </div>
                 <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <button>Read More</button> 
@@ -282,7 +282,7 @@
     <footer id="footer__mode">
        
         <section class="footer__section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.4375809060216!2d-74.00938978459514!3d40.708382679332324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a17e44ef3f7%3A0xfcbdd8c795c39fb8!2zMTAwIFdpbGxpYW0gU3QsIE5ldyBZb3JrLCBOWSAxMDAzOCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1611776234938!5m2!1sru!2s" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.4375809060216!2d-74.00938978459514!3d40.708382679332324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a17e44ef3f7%3A0xfcbdd8c795c39fb8!2zMTAwIFdpbGxpYW0gU3QsIE5ldyBZb3JrLCBOWSAxMDAzOCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1611776234938!5m2!1sru!2s" allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe>
             <div>
                 <h6 class="footer__tittle">
                     We are interested <br>
@@ -313,12 +313,11 @@
                 <h6 class="soc__tittle">
                     subscribe
                 </h6>
-                <form action="">
-                    <input type="text" name="email" id="" placeholder="Enter your e-mail here"/>
-                    <input type="submit" name="" id="send" value="SEND">
+                <form>
+                    <input type="text" name="email" placeholder="Enter your e-mail here"/>
+                    <button  id="send" >SEND</button>
                 </form>
-            </section>  
-            
+            </section>
         </div>
         <section class="nav container">
             <ul class="nav__items">
@@ -370,11 +369,7 @@
       }
       function chevron__off(){
           switch3.id = "radio"
-      }
-       
-      
-       
-       
+      }      
    </script>
 </body>
 </html>
